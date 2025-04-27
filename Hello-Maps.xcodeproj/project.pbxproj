@@ -15,6 +15,7 @@
 		8DC9A9D12A7823AE00B7BD89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC9A9D02A7823AE00B7BD89 /* ContentView.swift */; };
 		8DC9A9D32A7823AF00B7BD89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC9A9D22A7823AF00B7BD89 /* Assets.xcassets */; };
 		8DC9A9D62A7823AF00B7BD89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC9A9D52A7823AF00B7BD89 /* Preview Assets.xcassets */; };
+		91BFD96C2DBDF30100066ED9 /* MKCoordinateRegion+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BFD96B2DBDF30100066ED9 /* MKCoordinateRegion+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		8DC9A9D02A7823AE00B7BD89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8DC9A9D22A7823AF00B7BD89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DC9A9D52A7823AF00B7BD89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		91BFD96B2DBDF30100066ED9 /* MKCoordinateRegion+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateRegion+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				8DBD799C2A7AD5D700BCFF06 /* CLLocationCoordinate2D+Extensions.swift */,
+				91BFD96B2DBDF30100066ED9 /* MKCoordinateRegion+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91BFD96C2DBDF30100066ED9 /* MKCoordinateRegion+Extensions.swift in Sources */,
 				8DBD799A2A7AD59800BCFF06 /* LocationManager.swift in Sources */,
 				8DC9A9D12A7823AE00B7BD89 /* ContentView.swift in Sources */,
 				8DBD799D2A7AD5D700BCFF06 /* CLLocationCoordinate2D+Extensions.swift in Sources */,
@@ -312,7 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hello-Maps/Preview Content\"";
-				DEVELOPMENT_TEAM = B2Q8EGNCQA;
+				DEVELOPMENT_TEAM = 4YKFFA7W42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "NearMe app requires permission. ";
@@ -326,7 +330,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.azamsharp.Hello-Maps";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bee.Hello-Maps";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -342,7 +346,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hello-Maps/Preview Content\"";
-				DEVELOPMENT_TEAM = B2Q8EGNCQA;
+				DEVELOPMENT_TEAM = 4YKFFA7W42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "NearMe app requires permission. ";
@@ -356,7 +360,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.azamsharp.Hello-Maps";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bee.Hello-Maps";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

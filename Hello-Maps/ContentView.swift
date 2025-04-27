@@ -10,7 +10,7 @@ import MapKit
 struct ContentView: View {
     
     @State private var position: MapCameraPosition = .userLocation(fallback: .automatic)
-    private var locationManager = LocationManager.shared
+    @State  private var locationManager = LocationManager.shared
     @State private var selectedMapOption: MapOptions = .standard
     
     var body: some View {
@@ -29,9 +29,21 @@ struct ContentView: View {
                     Image(systemName: "fork.knife.circle")
                 }
                 
+                Marker("湖南文理学院", coordinate: .school)
                 UserAnnotation()
             }
+            .mapControls{
+                MapUserLocationButton()
+                MapCompass()
+                MapScaleView()
+            }
             .mapStyle(selectedMapOption.mapStyle)
+            .onChange(of: locationManager.region ){
+                withAnimation {
+                    position = .region(locationManager.region)
+                }
+                
+            }
             
             Picker("Map Styles", selection: $selectedMapOption) {
                 ForEach(MapOptions.allCases) { mapOption in
@@ -39,7 +51,30 @@ struct ContentView: View {
                 }
             }.pickerStyle(.segmented)
             .background(.white)
-            .padding()
+            .padding([.top], 60)
+            
+            VStack {
+                Spacer()
+                HStack{
+                    Button("Coffee"){
+                        withAnimation{
+                            position = .region(.coffee)
+                        }
+                    }.buttonStyle(.borderedProminent)
+                    Button("Restaurant"){
+                        withAnimation{
+                            position = .region(.restaurant)
+                        }
+                    }.buttonStyle(.borderedProminent)
+                        .tint(.green)
+                    Button("School"){
+                        withAnimation{
+                            position = .region(.school)
+                        }
+                    }.buttonStyle(.borderedProminent)
+                        .tint(.pink)
+                }
+            }
         }
         
     }

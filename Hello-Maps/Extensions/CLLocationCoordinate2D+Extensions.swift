@@ -15,4 +15,9 @@ extension CLLocationCoordinate2D {
     static var restaurant: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: 29.988869677028426, longitude: -95.55595575564956)
     }
+    
+    static var school: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(latitude: 29.0434, longitude: 111.6719)
+    }
+    
 }
